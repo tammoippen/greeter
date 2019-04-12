@@ -19,7 +19,7 @@ RUN apk add --no-cache \
     unzip ponysay.zip && cd ponysay-master && \
     ./setup.py install --freedom=partial && \
     cd / && \
-    apk del -t build && \
+    apk del --no-cache build && \
     rm -rf /ponysay.zip /ponysay-master /cowsay.zip /cowsay-master /pokemonsay.zip /pokemonsay-master
 
 COPY say /usr/local/bin/say
