@@ -1,0 +1,12 @@
+#! /bin/sh
+
+says="cowsay pokemonsay ponysay"
+idx=$(shuf -i 0-2 -n 1)
+say=$(echo ${says} | cut -d' ' -f$idx)
+
+if [ "$say" == "cowsay" ]
+then
+    cowsay -f $(ls /usr/local/share/cows/ | shuf -n1) $@
+else
+    eval "$say foobar" $@
+fi
