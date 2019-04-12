@@ -6,16 +6,16 @@ ENV PATH="/root/bin:${PATH}"
 RUN apk add --no-cache \
       fortune \
       perl && \
-    wget -O cowsay.zip http://github.com/schacon/cowsay/archive/master.zip && \
+    wget -O cowsay.zip https://github.com/schacon/cowsay/archive/master.zip && \
     unzip cowsay.zip && cd /cowsay-master && sh install.sh && \
     cd / && \
-    wget -O pokemonsay.zip http://github.com/possatti/pokemonsay/archive/master.zip && \
+    wget -O pokemonsay.zip https://github.com/possatti/pokemonsay/archive/master.zip && \
     unzip pokemonsay.zip && cd /pokemonsay-master && sh install.sh && \
     cd / && \
     apk add --no-cache -t build  \
       openssl \
       texinfo && \
-    wget -O ponysay.zip http://github.com/erkin/ponysay/archive/master.zip && \
+    wget -O ponysay.zip https://github.com/erkin/ponysay/archive/master.zip && \
     unzip ponysay.zip && cd ponysay-master && \
     ./setup.py install --freedom=partial && \
     cd / && \
