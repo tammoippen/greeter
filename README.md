@@ -16,10 +16,8 @@ Based on [python:3.7-alpine3.9](https://hub.docker.com/_/python/) to keep it sma
 
 All these commands can be executed as expected:
 
-(*`fortune` is the default command*)
-
 ```sh
-» docker run --rm tammoippen/greeter
+» docker run --rm tammoippen/greeter fortune
 Know what I hate most?  Rhetorical questions.
 		-- Henry N. Camp
 ```
@@ -65,12 +63,12 @@ Pipe the fortune to the speaker - do not forget the `-i`.
                 ||     ||
 ```
 
-## Random sayer
+## Random speaker `say`
 
 Randomly select the speaker:
 
 ```
-» docker run --rm tammoippen/greeter | docker run --rm -i tammoippen/greeter say                                                          (2s 63ms)
+» docker run --rm tammoippen/greeter | docker run --rm -i tammoippen/greeter say
  ________________________________________
 / Committees have become so important    \
 | nowadays that subcommittees have to be |
@@ -85,4 +83,33 @@ Randomly select the speaker:
      (|     | )
     /'\_   _/`\
     \___)=(___/
+```
+
+## Completly random greating
+```
+» docker run --rm tammoippen/greeter
+ _________________________________________
+/ You can do this in a number of ways.    \
+| IBM chose to do all of them. Why do you |
+| find that funny?                        |
+|                                         |
+| -- D. Taylor, Computer Science 350,     |
+\ University of Washington                /
+ -----------------------------------------
+ \     ____________
+  \    |__________|
+      /           /\
+     /           /  \
+    /___________/___/|
+    |          |     |
+    |  ==\ /== |     |
+    |   O   O  | \ \ |
+    |     <    |  \ \|
+   /|          |   \ \
+  / |  \_____/ |   / /
+ / /|          |  / /|
+/||\|          | /||\/
+    -------------|
+        | |    | |
+       <__/    \__>
 ```

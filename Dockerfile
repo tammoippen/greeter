@@ -25,4 +25,4 @@ RUN apk add --no-cache \
 COPY say /usr/local/bin/say
 RUN chmod +x /usr/local/bin/say
 
-CMD [ "fortune" ]
+CMD ["/bin/sh", "-c", "fortune | say" ]

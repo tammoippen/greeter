@@ -8,5 +8,5 @@ if [ "$say" == "cowsay" ]
 then
     cowsay -f $(ls /usr/local/share/cows/ | shuf -n1) $@
 else
-    eval "$say foobar" $@
+    eval "$say $@"
 fi
