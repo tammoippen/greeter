@@ -51,7 +51,7 @@ Know what I hate most?  Rhetorical questions.
 Pipe the fortune to the speaker - do not forget the `-i`.
 
 ```
-» docker run --rm tammoippen/greeter | docker run --rm -i tammoippen/greeter cowsay
+» docker run --rm tammoippen/greeter fortune | docker run --rm -i tammoippen/greeter cowsay
  _____________________________________
 / As long as the answer is right, who \
 \ cares if the question is wrong?     /
@@ -68,7 +68,7 @@ Pipe the fortune to the speaker - do not forget the `-i`.
 Randomly select the speaker:
 
 ```
-» docker run --rm tammoippen/greeter | docker run --rm -i tammoippen/greeter say
+» docker run --rm tammoippen/greeter fortune | docker run --rm -i tammoippen/greeter say
  ________________________________________
 / Committees have become so important    \
 | nowadays that subcommittees have to be |
