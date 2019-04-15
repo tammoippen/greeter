@@ -1,4 +1,5 @@
-[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=tammoippen&repository=greeter)](https://hub.docker.com/r/tammoippen/greeter/builds/) 
+[![](https://img.shields.io/docker/cloud/build/tammoippen/greeter.svg)](https://hub.docker.com/r/tammoippen/greeter/builds/) 
+![](https://img.shields.io/docker/pulls/tammoippen/greeter.svg)
 
 # Terminal Greeter
 
