@@ -6,7 +6,7 @@ say=$(echo ${says} | cut -d' ' -f$idx)
 
 if [ "$say" == "cowsay" ]
 then
-    cowsay -f $(ls /usr/local/share/cows/ | shuf -n1) $@
+    cowsay -f $(ls /usr/local/share/cows/ | grep -v mech-and-cow | shuf -n1) $@
 else
     eval "$say $@"
 fi
