@@ -1,3 +1,5 @@
+[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=tammoippen&repository=greeter)](https://hub.docker.com/r/tammoippen/greeter/builds/) 
+
 # Terminal Greeter
 
 One docker image to rule them all:
