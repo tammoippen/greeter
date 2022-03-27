@@ -1,4 +1,4 @@
-FROM python:3.7-alpine3.9
+FROM python:3.7-alpine
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PATH="/root/bin:${PATH}"
